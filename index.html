@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Ibanez Purnomo — Frontend Developer</title>
+  <meta name="description"
+    content="Portfolio of Gabriel Ibanez Purnomo, a passionate Frontend Developer who loves building beautiful and interactive web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Star Canvas -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- Nav -->
+  <nav id="mainNav">
+    <a href="#home" class="active" id="nav-home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12L12 3l9 9" />
+        <path d="M9 21V12h6v9" />
+      </svg>HOME
+    </a>
+    <a href="#about" id="nav-about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+      </svg>ABOUT
+    </a>
+    <a href="#skills" id="nav-skills">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon
+          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>SKILLS
+    </a>
+    <a href="#projects" id="nav-projects">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="7" width="20" height="14" rx="2" />
+        <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+      </svg>PROJECTS
+    </a>
+    <a href="#wall" id="nav-wall">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </svg>WALL
+    </a>
+    <a href="#contact" id="nav-contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+        <polyline points="22,6 12,13 2,6" />
+      </svg>CONTACT
+    </a>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Frontend Developer</span><span class="dot">✦</span>
+        <span>Moon Lover</span><span class="dot">✦</span>
+        <span>UI Enthusiast</span><span class="dot">✦</span>
+        <span>Creative Coder</span><span class="dot">✦</span>
+        <span>Open to Work</span><span class="dot">✦</span>
+        <span>Frontend Developer</span><span class="dot">✦</span>
+        <span>Moon Lover</span><span class="dot">✦</span>
+        <span>UI Enthusiast</span><span class="dot">✦</span>
+        <span>Creative Coder</span><span class="dot">✦</span>
+        <span>Open to Work</span><span class="dot">✦</span>
+      </div>
+    </div>
+    <div class="hero-content fade-in" style="margin-top: 70px;">
+      <div class="badge"><span></span>Available for Projects &amp; Internships</div>
+      <p class="hero-hi">Hi, I'm</p>
+      <h1 class="hero-name"><span id="heroTypewriter"></span><span class="typewriter-cursor"></span></h1>
+      <div class="hero-tags">
+        <span class="hero-tag">Frontend Developer</span>
+        <span class="hero-tag">🌙 Moon Enthusiast</span>
+      </div>
+      <p class="hero-desc">
+        Passionate Frontend Developer who crafts beautiful, interactive web experiences.
+        I turn ideas into pixel-perfect interfaces with a touch of moonlit magic.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Hero Right Visual -->
+    <div class="hero-right fade-in">
+      <!-- Glow blobs -->
+      <div class="hero-blob"
+        style="width:300px;height:300px;background:rgba(120,60,255,0.12);top:50%;left:50%;transform:translate(-50%,-50%)">
+      </div>
+      <div class="hero-blob"
+        style="width:200px;height:200px;background:rgba(255,180,50,0.09);top:25%;left:55%;transform:translate(-50%,-50%)">
+      </div>
+      <!-- Orbit rings -->
+      <div class="orbit-ring">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="orbit-ring">
+        <div class="orbit-dot"></div>
+      </div>
+      <div class="orbit-ring"></div>
+      <!-- Moon orb -->
+      <div class="hero-moon-orb"></div>
+      <!-- Floating tech chips -->
+      <div class="hero-chip" style="top:55px;left:0px;animation-duration:5s;animation-delay:0s"> React</div>
+      <div class="hero-chip" style="top:95px;right:5px;animation-duration:6s;animation-delay:1s"> TypeScript</div>
+      <div class="hero-chip" style="bottom:145px;left:5px;animation-duration:5.5s;animation-delay:0.5s"> CSS / SCSS
+      </div>
+      <div class="hero-chip" style="bottom:95px;right:5px;animation-duration:7s;animation-delay:1.5s"> Next.js</div>
+      <div class="hero-chip" style="top:195px;left:-5px;animation-duration:6.5s;animation-delay:2s"> Node.js</div>
+      <!-- Mini status card -->
+      <div class="hero-mini-card">
+        <div class="mini-card-label"><span class="mini-card-dot"></span> Status</div>
+        <div class="mini-card-val">Open to Work 🌙</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="fade-in">
+      <p class="section-label">✦ About Me</p>
+      <h2 class="section-title">Who am I?</h2>
+    </div>
+    <div class="about-grid fade-in">
+      <div class="about-photo-wrap">
+        <div class="about-photo-card">
+          <img src="images/profile.jpg" alt="Gabriel Ibanez Purnomo" class="about-photo-img" />
+          <div class="photo-glow-overlay"></div>
+          <div class="photo-badge">
+            <span class="photo-badge-dot"></span> Gabriel Ibanez Purnomo
+          </div>
+        </div>
+        <div class="photo-ring"></div>
+      </div>
+      <div class="about-text">
+        <h3>Gabriel Ibanez Purnomo</h3>
+        <p>
+          Seorang Frontend Developer yang passionate dalam membangun antarmuka web yang indah dan interaktif.
+          Dengan ketertarikan mendalam pada desain dan teknologi, saya selalu berusaha menciptakan pengalaman
+          pengguna yang tak terlupakan.
+        </p>
+        <p>
+          Seperti bulan yang selalu hadir di malam hari, saya percaya bahwa keindahan sejati tersembunyi dalam
+          detail-detail kecil yang diperhatikan dengan penuh cinta.
+        </p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="num">5+</div>
+            <div class="lbl">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">2+</div>
+            <div class="lbl">Years Exp</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">∞</div>
+            <div class="lbl">Passion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Highlights / Key Pillars -->
+    <div class="about-highlights fade-in">
+      <div class="about-highlight-card">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg></div>
+        <div class="hl-content">
+          <h4>Modern Frontend Dev</h4>
+          <p>Membangun antarmuka web modern yang responsif, cepat, dan terstruktur rapi.</p>
+        </div>
+      </div>
+      <div class="about-highlight-card">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg></div>
+        <div class="hl-content">
+          <h4>UI/UX &amp; Motion Design</h4>
+          <p>Menciptakan animasi interaktif, micro-interactions, dan visual bertema magis.</p>
+        </div>
+      </div>
+      <div class="about-highlight-card">
+        <div class="hl-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+            <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+            </path>
+            <path d="M9 12H4s.55-3.03 2-4.5c1.62-1.63 5-2 5-2"></path>
+            <path d="M12 15v5s3.03-.55 4.5-2c1.63-1.62 2-5 2-5"></path>
+          </svg></div>
+        <div class="hl-content">
+          <h4>Creative Exploration</h4>
+          <p>Eksplorasi berkelanjutan dari Game 3D, Networking, hingga Modern Frameworks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate & Credentials QR Showcase -->
+    <div class="cert-showcase-card fade-in">
+      <div class="cert-info">
+        <div class="cert-badge">
+          <span class="cert-badge-dot"></span> Verified Credentials
+        </div>
+        <h3 class="cert-title">Certifications &amp; Licenses</h3>
+        <p class="cert-desc">
+          Pindai kode QR di samping untuk memverifikasi dan melihat seluruh dokumen sertifikasi resmi, lisensi
+          profesional, serta riwayat pelatihan yang telah saya selesaikan.
+        </p>
+        <div class="cert-features">
+          <div class="cert-feat-item">
+            <div class="cert-feat-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M9 15l2 2 4-4"></path>
+              </svg></div>
+            <div>
+              <strong>Digital Credentials</strong>
+              <span>Akses langsung ke sertifikat terverifikasi</span>
+            </div>
+          </div>
+          <div class="cert-feat-item">
+            <div class="cert-feat-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg></div>
+            <div>
+              <strong>Skill Validation</strong>
+              <span>Standar kompetensi &amp; keahlian teruji</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-qr-wrap">
+        <div class="cert-qr-box">
+          <div class="qr-scan-line"></div>
+          <div class="qr-corner top-left"></div>
+          <div class="qr-corner top-right"></div>
+          <div class="qr-corner bottom-left"></div>
+          <div class="qr-corner bottom-right"></div>
+          <img src="images/certificate-qr.jpg" alt="QR Code Sertifikat Gabriel Ibanez Purnomo" class="cert-qr-img" />
+        </div>
+        <div class="cert-qr-hint">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4" />
+          </svg>
+          Scan via Kamera / Lens
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS / TECH STACK ===== -->
+  <section id="skills">
+    <div class="skills-header fade-in">
+      <p class="section-label">✦ MY EXPERTISE</p>
+      <h2 class="section-title">My Tech Stack</h2>
+      <p class="section-desc">Teknologi, bahasa pemrograman, tools kreatif, dan software yang aktif saya gunakan.</p>
+    </div>
+
+    <!-- Interactive Floating Zero-Gravity Tech Stack Arena -->
+    <div class="tech-space-wrapper fade-in">
+      <div class="tech-space-canvas-wrap" id="techSpaceWrap">
+        <div class="tech-space-overlay-center">
+          <div class="tech-center-title">My Tech Universe</div>
+          <div class="tech-center-hint">Tarik &amp; lempar badge teknologi untuk berinteraksi!</div>
+        </div>
+        <div class="tech-space-badge-layer" id="techSpaceLayer">
+          <!-- Floating pills will be dynamically generated by script.js -->
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="tech-filters" id="techFilters">
+        <button class="tech-filter-btn active" data-filter="all">Semua (23)</button>
+        <button class="tech-filter-btn" data-filter="web">Web &amp; Code</button>
+        <button class="tech-filter-btn" data-filter="game">Game &amp; 3D</button>
+        <button class="tech-filter-btn" data-filter="design">Design &amp; Media</button>
+        <button class="tech-filter-btn" data-filter="sys">System &amp; Data</button>
+      </div>
+    </div>
+
+    <div class="skills-grid fade-in">
+      <div class="skill-card">
+        <div class="skill-icon"></div>
+        <h4>Web &amp; Software Dev</h4>
+        <p>HTML, CSS, JavaScript, Node.js, Python, C++, Supabase, SQL, Postman</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"></div>
+        <h4>Game &amp; 3D Creative</h4>
+        <p>Unity, GameMaker, Blender, 3D Modeling &amp; Game Mechanics</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"></div>
+        <h4>Design &amp; Multimedia</h4>
+        <p>Figma, Adobe Photoshop, Adobe Illustrator, Premiere Pro, LMMS</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"></div>
+        <h4>System, Cloud &amp; Data</h4>
+        <p>Linux, Ubuntu, Cisco Networking, PuTTY, Google Colab, Tableau</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="projects-intro fade-in">
+      <p class="section-label">✦ Showcase</p>
+      <h2 class="section-title">My Portfolio</h2>
+      <p class="section-desc">Project-project pilihan yang telah saya bangun dengan penuh dedikasi.</p>
+      <p class="scroll-hint">Scroll down ↓</p>
+    </div>
+
+    <div class="projects-stack">
+      <div class="project-card fade-in">
+        <div class="project-preview">
+          <img src="images/Healora web.jpeg" alt="Healora Web Preview"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="project-info">
+          <p class="project-cat">✦ Web App</p>
+          <h3>Healora</h3>
+          <p>The Challenge In Indonesia, thousands of children still face growth failure due to nutritional gaps during
+            the First 1,000 Days of Life. Parents often struggle to identify nutritional needs and understand their
+            baby's signals, leaving them overwhelmed and increasing the risk of stunting.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Google-Colab</span>
+            <span class="project-tag">Html</span>
+            <span class="project-tag">Css</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-info">
+          <p class="project-cat">✦ Game Development</p>
+          <h3>Hollow Covenant</h3>
+          <p>Game visual novel bertema dark fantasy di kedalaman laut lepas yang misterius. Mengangkat konsep 7 Deadly
+            Sins, kamu akan menjelajahi konflik moral mendalam, berinteraksi dengan karakter bernuansa kelam, dan
+            menentukan jalan cerita melalui pilihan interaktif yang berpengaruh pada akhir kisah.</p>
+          <div class="project-tags">
+            <span class="project-tag">GameMaker</span>
+            <span class="project-tag">Visual Novel</span>
+            <span class="project-tag">2D Art</span>
+            <span class="project-tag">CSS</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+        <div class="project-preview" style="border-right:none;border-left:1px solid rgba(160,130,255,0.1)">
+          <img src="images/hollow.jpeg" alt="Hollow Covenant Preview"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card fade-in">
+        <div class="project-preview">
+          <img src="images/live-yt.png" alt="Artemis Canvas Preview"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="project-info">
+          <p class="project-cat">✦ Live-Streaming</p>
+          <h3>Artemis Canvas</h3>
+          <p>Platform menggambar bersama secara real-time bertema Artemis Canvas dengan antarmuka yang interaktif.</p>
+          <div class="project-tags">
+            <span class="project-tag">Html</span>
+            <span class="project-tag">javascript</span>
+            <span class="project-tag">json</span>
+            <span class="project-tag">CSS</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+    </div> <!-- Tutup div class="projects-stack" di sini -->
+  </section> <!-- TUTUP SECTION PROJECTS DI SINI -->
+
+  <!-- ===== WALL ===== -->
+  <section id="wall">
+    <div class="fade-in">
+      <p class="section-label">✦ Guestbook</p>
+      <h2 class="section-title" style="margin-bottom:56px;">Leave a Trace</h2>
+    </div>
+
+    <div class="wall-layout">
+      <div class="wall-notes-area" id="notesArea">
+        <div class="sticky" style="top:0;left:20px;background:#fce4ec;color:#333;transform:rotate(-3deg)">
+          <span class="sticky-name">NaufalNyan <span class="sticky-time">1m ago</span></span>
+          <span class="sticky-text">"colab yooo @nafalnyaa_id"</span>
+        </div>
+        <div class="sticky" style="top:30px;left:230px;background:#e8eaf6;color:#333;transform:rotate(2deg)">
+          <span class="sticky-name">RuumiDev <span class="sticky-time">1h ago</span></span>
+          <span class="sticky-text">"Stumbled from TikTok, really lovely portfolio 🔥"</span>
+        </div>
+        <div class="sticky" style="top:190px;left:40px;background:#e0f2f1;color:#333;transform:rotate(-1deg)">
+          <span class="sticky-name">Hiii <span class="sticky-time">2h ago</span></span>
+          <span class="sticky-text">"I'm so proud of u"</span>
+        </div>
+        <div class="sticky" style="top:200px;left:240px;background:#fff9c4;color:#333;transform:rotate(3deg)">
+          <span class="sticky-name">MoonFan <span class="sticky-time">3h ago</span></span>
+          <span class="sticky-text">"Website kamu keren banget! 🌙"</span>
+        </div>
+        <div class="sticky" style="top:360px;left:80px;background:#f3e5f5;color:#333;transform:rotate(-2deg)">
+          <span class="sticky-name">Someone <span class="sticky-time">4h ago</span></span>
+          <span class="sticky-text">"Terus berkarya ya!"</span>
+        </div>
+      </div>
+
+      <div class="wall-form-box fade-in">
+        <h3>Leave a Trace</h3>
+        <p>Tinggalkan pesan, feedback, atau sekedar menyapa di sticky note ku! 🌙</p>
+        <label class="form-label">YOUR NAME</label>
+        <input type="text" class="form-input" id="wallName" placeholder="Nama atau handle...">
+        <label class="form-label">YOUR MESSAGE</label>
+        <textarea class="form-textarea" id="wallMsg" placeholder="Tulis pesanmu di sini..."></textarea>
+        <button class="btn-post" onclick="postSticky()">POST STICKY NOTE 🌙</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-header fade-in">
+      <p class="section-label">✦ Get In Touch</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-desc">Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya! 🌙</p>
+    </div>
+    <div class="contact-links fade-in">
+      <a href="mailto:gabriel@email.com" class="contact-card">
+        <span class="cc-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg></span>Email Me
+      </a>
+      <a href="https://github.com/gabrielibanezp" target="_blank" class="contact-card">
+        <span class="cc-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg></span>GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/gabriel-ibanez-purnomo-5a7415380?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        target="_blank" class="contact-card">
+        <span class="cc-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg></span>LinkedIn
+      </a>
+      <a href="https://www.instagram.com/briel_purnomo?igsh=N3gzYWVwbm5mYnk0&igsi=N3gzYWVwbm5mYnk0" target="_blank"
+        class="contact-card">
+        <span class="cc-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg></span>Instagram
+      </a>
+    </div>
+    <p class="footer-note">
+      Made with 🌙 &amp; by Gabriel Ibanez Purnomo &bull; 2026
+    </p>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
