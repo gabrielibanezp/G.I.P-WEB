@@ -1730,3 +1730,228 @@ nav a svg {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   RESPONSIVE DESIGN FOR MOBILE & TABLET
+   ========================================== */
+
+/* Tablet & Mobile Screens (Max-width: 992px) */
+@media (max-width: 992px) {
+
+  /* Hero Section Adjustment */
+  #home {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-tags,
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-right {
+    height: 380px;
+  }
+
+  .hero-moon-orb {
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit-ring:nth-child(1) {
+    width: 260px;
+    height: 260px;
+  }
+
+  .orbit-ring:nth-child(2) {
+    width: 320px;
+    height: 320px;
+  }
+
+  .orbit-ring:nth-child(3) {
+    width: 380px;
+    height: 380px;
+  }
+
+  /* About Grid */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-stats {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certificate Showcase */
+  .cert-showcase-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+    padding: 28px 20px;
+  }
+
+  .cert-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cert-features {
+    justify-content: center;
+  }
+
+  .cert-qr-wrap {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Screens (Max-width: 768px) */
+@media (max-width: 768px) {
+  section {
+    padding: 70px 20px 50px;
+  }
+
+  /* Bottom Navigation Bar Adjustment */
+  nav {
+    width: 92%;
+    padding: 8px 12px;
+    justify-content: space-around;
+    gap: 2px;
+    bottom: 16px;
+  }
+
+  nav a {
+    padding: 8px 10px;
+    font-size: 0;
+    /* Sembunyikan teks menu, tampilkan icon agar tidak berdesakan */
+    border-radius: 50%;
+  }
+
+  nav a svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Interactive Tech Space Arena Mobile */
+  .tech-space-canvas-wrap {
+    height: 380px;
+  }
+
+  .tech-center-title {
+    font-size: 26px;
+  }
+
+  .tech-center-hint {
+    font-size: 11px;
+  }
+
+  .tech-pill {
+    padding: 6px 12px;
+    font-size: 11.5px;
+  }
+
+  /* Projects Mobile */
+  .project-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-preview {
+    min-height: 200px;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid rgba(160, 130, 255, 0.1);
+  }
+
+  .project-info {
+    padding: 24px 20px;
+  }
+
+  .project-info h3 {
+    font-size: 24px;
+  }
+
+  /* Wall / Guestbook Area */
+  .wall-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .wall-notes-area {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Ubah sticky notes absolute menjadi stack vertikal di HP */
+  .sticky {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    transform: none !important;
+  }
+
+  .wall-form-box {
+    padding: 24px 18px;
+  }
+
+  /* Contact Cards */
+  .contact-card {
+    width: 100%;
+  }
+}
+
+/* Small Mobile Screens (Max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 38px;
+  }
+
+  .hero-chip {
+    display: none;
+    /* Sembunyikan melayang chip di HP sangat kecil agar tidak menutupi visual */
+  }
+
+  .hero-mini-card {
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .about-photo-card {
+    width: 250px;
+    height: 320px;
+  }
+
+  .photo-ring {
+    width: 270px;
+    height: 340px;
+  }
+
+  .stat-card {
+    padding: 14px 8px;
+  }
+
+  .stat-card .num {
+    font-size: 22px;
+  }
+}
