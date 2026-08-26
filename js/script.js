@@ -91,7 +91,7 @@ const rotations = [-4, -3, -2, -1, 0, 1, 2, 3, 4];
 function postSticky() {
   const name = document.getElementById('wallName').value.trim();
   const msg = document.getElementById('wallMsg').value.trim();
-  if (!name || !msg) { alert('Isi nama dan pesanmu dulu ya! 🌙'); return; }
+  if (!name || !msg) { alert('Silakan isi nama dan pesanmu terlebih dahulu!'); return; }
   const area = document.getElementById('notesArea');
   const color = colors[Math.floor(Math.random() * colors.length)];
   const r = rotations[Math.floor(Math.random() * rotations.length)];
@@ -115,31 +115,45 @@ document.querySelectorAll('nav a').forEach(a => {
   });
 });
 
-// ===== 23 INTERACTIVE FLOATING TECH STACK PILLS =====
+// ===== 28 INTERACTIVE FLOATING TECH STACK PILLS WITH REAL LOGOS =====
 const techItems = [
-  { name: 'HTML', cat: 'web', color: '#e34f26' },
-  { name: 'CSS', cat: 'web', color: '#1572b6' },
-  { name: 'GameMaker', cat: 'game', color: '#5c9e31' },
-  { name: 'Tableau', cat: 'sys', color: '#e97627' },
-  { name: 'Python', cat: 'web', color: '#3776ab' },
-  { name: 'Premiere Pro', cat: 'design', color: '#9999ff' },
-  { name: 'Node.js', cat: 'web', color: '#339933' },
-  { name: 'Postman', cat: 'web', color: '#ff6c37' },
-  { name: 'Figma', cat: 'design', color: '#f24e1e' },
-  { name: 'LMMS', cat: 'design', color: '#158c42' },
-  { name: 'Cisco', cat: 'sys', color: '#1ba0d7' },
-  { name: 'Ubuntu', cat: 'sys', color: '#e95420' },
-  { name: 'Linux', cat: 'sys', color: '#fcc624' },
-  { name: 'Google Colab', cat: 'sys', color: '#f9ab00' },
-  { name: 'Unity', cat: 'game', color: '#ffffff' },
-  { name: 'SQL', cat: 'web', color: '#00758f' },
-  { name: 'JavaScript', cat: 'web', color: '#f7df1e' },
-  { name: 'Adobe Photoshop', cat: 'design', color: '#31a8ff' },
-  { name: 'Adobe Illustrator', cat: 'design', color: '#ff9a00' },
-  { name: 'PuTTY', cat: 'sys', color: '#4a90e2' },
-  { name: 'Blender', cat: 'game', color: '#ea7600' },
-  { name: 'C++', cat: 'web', color: '#00599c' },
-  { name: 'Supabase', cat: 'web', color: '#3ecf8e' }
+  // Web & Code
+  { name: 'HTML', cat: 'web', color: '#e34f26', icon: 'devicon-html5-plain colored' },
+  { name: 'CSS', cat: 'web', color: '#1572b6', icon: 'devicon-css3-plain colored' },
+  { name: 'JavaScript', cat: 'web', color: '#f7df1e', icon: 'devicon-javascript-plain colored' },
+  { name: 'PHP', cat: 'web', color: '#777bb4', icon: 'devicon-php-plain colored' },
+  { name: 'Node.js', cat: 'web', color: '#339933', icon: 'devicon-nodejs-plain colored' },
+  { name: 'C++', cat: 'web', color: '#00599c', icon: 'devicon-cplusplus-plain colored' },
+  { name: 'SQL', cat: 'web', color: '#00758f', icon: 'devicon-mysql-original colored' },
+  { name: 'Postman', cat: 'web', color: '#ff6c37', icon: 'devicon-postman-plain colored' },
+  { name: 'Supabase', cat: 'web', color: '#3ecf8e', icon: 'devicon-supabase-plain colored' },
+
+  // Data & AI / Databases
+  { name: 'Python', cat: 'data', color: '#3776ab', icon: 'devicon-python-plain colored' },
+  { name: 'NumPy', cat: 'data', color: '#4dabcf', icon: 'devicon-numpy-original colored' },
+  { name: 'Pandas', cat: 'data', color: '#e70488', icon: 'devicon-pandas-original colored' },
+  { name: 'R Studio', cat: 'data', color: '#75aadb', icon: 'devicon-rstudio-plain colored' },
+  { name: 'MariaDB', cat: 'data', color: '#003545', icon: 'devicon-mariadb-original colored' },
+  { name: 'Google Colab', cat: 'data', color: '#f9ab00', svg: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>' },
+  { name: 'Tableau', cat: 'data', color: '#e97627', svg: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M11 2h2v4h-2V2zm0 16h2v4h-2v-4zm-9-9h4v2H2V9zm16 0h4v2h-4V9zm-8-3h2v12h-2V6zm-5 5h12v2H6v-2z"/></svg>' },
+
+  // Game & 3D
+  { name: 'Unity', cat: 'game', color: '#ffffff', icon: 'devicon-unity-original' },
+  { name: 'GameMaker', cat: 'game', color: '#5c9e31', svg: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2zm0-4h-2V7h2z"/></svg>' },
+  { name: 'Blender', cat: 'game', color: '#ea7600', icon: 'devicon-blender-original colored' },
+
+  // Design & Media
+  { name: 'Figma', cat: 'design', color: '#f24e1e', icon: 'devicon-figma-plain colored' },
+  { name: 'Adobe Photoshop', cat: 'design', color: '#31a8ff', icon: 'devicon-photoshop-plain colored' },
+  { name: 'Adobe Illustrator', cat: 'design', color: '#ff9a00', icon: 'devicon-illustrator-plain colored' },
+  { name: 'Premiere Pro', cat: 'design', color: '#9999ff', icon: 'devicon-premierepro-plain colored' },
+  { name: 'LMMS', cat: 'design', color: '#158c42', svg: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>' },
+
+  // System & Cloud
+  { name: 'Linux', cat: 'sys', color: '#fcc624', icon: 'devicon-linux-plain' },
+  { name: 'Ubuntu', cat: 'sys', color: '#e95420', icon: 'devicon-ubuntu-plain colored' },
+  { name: 'Cisco', cat: 'sys', color: '#1ba0d7', svg: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 10a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5 4a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm-15 8a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5 4a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1z"/></svg>' },
+  { name: 'PuTTY', cat: 'sys', color: '#4a90e2', svg: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="7 9 10 12 7 15" stroke="currentColor" stroke-width="2" fill="none"/><line x1="12" y1="15" x2="16" y2="15" stroke="currentColor" stroke-width="2"/></svg>' }
 ];
 
 function initTechStack() {
@@ -153,8 +167,8 @@ function initTechStack() {
   const pills = [];
 
   // Pre-calculate scattered starting positions
-  const cols = 5;
-  const rows = 5;
+  const cols = 6;
+  const rows = 6;
   const cellW = width / cols;
   const cellH = height / rows;
 
@@ -163,10 +177,15 @@ function initTechStack() {
     el.className = 'tech-pill';
     el.dataset.cat = tech.cat;
     el.style.borderColor = tech.color + '44';
+
+    const iconHtml = tech.icon 
+      ? `<i class="${tech.icon} tech-pill-icon"></i>` 
+      : `<span class="tech-pill-svg" style="color:${tech.color}">${tech.svg}</span>`;
+
     el.innerHTML = `
-        <span class="tech-pill-dot" style="background-color: ${tech.color}; color: ${tech.color}"></span>
-        <span class="tech-pill-text">${tech.name}</span>
-      `;
+      ${iconHtml}
+      <span class="tech-pill-text">${tech.name}</span>
+    `;
 
     // Hover glow
     el.addEventListener('mouseenter', () => {
@@ -183,24 +202,24 @@ function initTechStack() {
     // Grid jitter for good initial dispersion without overlapping
     const c = i % cols;
     const r = Math.floor(i / cols);
-    const initX = c * cellW + Math.random() * (cellW - 130) + 15;
-    const initY = r * cellH + Math.random() * (cellH - 45) + 15;
+    const initX = c * cellW + Math.random() * Math.max(10, cellW - 140) + 15;
+    const initY = r * cellH + Math.random() * Math.max(10, cellH - 45) + 15;
 
-    const angle = (Math.random() - 0.5) * 45; // -22.5 to +22.5 deg rotation
+    const angle = (Math.random() - 0.5) * 36; // -18 to +18 deg rotation
     const speed = 0.25 + Math.random() * 0.35;
     const dir = Math.random() * Math.PI * 2;
 
     const pObj = {
       el,
       tech,
-      x: Math.max(10, Math.min(width - 140, initX)),
-      y: Math.max(10, Math.min(height - 50, initY)),
+      x: Math.max(10, Math.min(width - 150, initX)),
+      y: Math.max(10, Math.min(height - 55, initY)),
       vx: Math.cos(dir) * speed,
       vy: Math.sin(dir) * speed,
       angle: angle,
-      vAngle: (Math.random() - 0.5) * 0.12,
-      w: 130, // will be measured
-      h: 40,
+      vAngle: (Math.random() - 0.5) * 0.1,
+      w: 140, // will be measured
+      h: 42,
       isDragging: false,
       dragStartX: 0,
       dragStartY: 0,
@@ -213,8 +232,8 @@ function initTechStack() {
 
     // Measure actual element size after mounting
     requestAnimationFrame(() => {
-      pObj.w = el.offsetWidth || 130;
-      pObj.h = el.offsetHeight || 40;
+      pObj.w = el.offsetWidth || 140;
+      pObj.h = el.offsetHeight || 42;
     });
 
     // --- DRAG & THROW PHYSICS ---
@@ -325,7 +344,7 @@ function initTechStack() {
       p.vx *= 0.996;
       p.vy *= 0.996;
 
-      // If speed drops too low, give a gentle cosmic drift
+      // Gentle cosmic drift
       const speed = Math.hypot(p.vx, p.vy);
       if (speed < 0.2) {
         const angle = Math.random() * Math.PI * 2;

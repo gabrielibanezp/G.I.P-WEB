@@ -10,8 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600&display=swap"
     rel="stylesheet" />
+  <!-- Devicon Vector Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -64,15 +66,15 @@
     <div class="marquee-wrap">
       <div class="marquee-track">
         <span>Frontend Developer</span><span class="dot">✦</span>
-        <span>Moon Lover</span><span class="dot">✦</span>
-        <span>UI Enthusiast</span><span class="dot">✦</span>
+        <span>UI/UX Enthusiast</span><span class="dot">✦</span>
         <span>Creative Coder</span><span class="dot">✦</span>
-        <span>Open to Work</span><span class="dot">✦</span>
+        <span>Data &amp; Game Explorer</span><span class="dot">✦</span>
+        <span>Open to Opportunities</span><span class="dot">✦</span>
         <span>Frontend Developer</span><span class="dot">✦</span>
-        <span>Moon Lover</span><span class="dot">✦</span>
-        <span>UI Enthusiast</span><span class="dot">✦</span>
+        <span>UI/UX Enthusiast</span><span class="dot">✦</span>
         <span>Creative Coder</span><span class="dot">✦</span>
-        <span>Open to Work</span><span class="dot">✦</span>
+        <span>Data &amp; Game Explorer</span><span class="dot">✦</span>
+        <span>Open to Opportunities</span><span class="dot">✦</span>
       </div>
     </div>
     <div class="hero-content fade-in" style="margin-top: 70px;">
@@ -81,11 +83,16 @@
       <h1 class="hero-name"><span id="heroTypewriter"></span><span class="typewriter-cursor"></span></h1>
       <div class="hero-tags">
         <span class="hero-tag">Frontend Developer</span>
-        <span class="hero-tag">🌙 Moon Enthusiast</span>
+        <span class="hero-tag">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#a78bfa" style="display:inline-block;vertical-align:-1px;margin-right:4px;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          Night Owl &amp; Creative Coder
+        </span>
       </div>
       <p class="hero-desc">
-        Passionate Frontend Developer who crafts beautiful, interactive web experiences.
-        I turn ideas into pixel-perfect interfaces with a touch of moonlit magic.
+        Passionate Frontend Developer &amp; Software Enthusiast crafting interactive, performant web applications, 
+        engaging 3D/game experiences, and data-driven systems with pixel-perfect design.
       </p>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">View My Work</a>
@@ -112,17 +119,31 @@
       <div class="orbit-ring"></div>
       <!-- Moon orb -->
       <div class="hero-moon-orb"></div>
-      <!-- Floating tech chips -->
-      <div class="hero-chip" style="top:55px;left:0px;animation-duration:5s;animation-delay:0s"> React</div>
-      <div class="hero-chip" style="top:95px;right:5px;animation-duration:6s;animation-delay:1s"> TypeScript</div>
-      <div class="hero-chip" style="bottom:145px;left:5px;animation-duration:5.5s;animation-delay:0.5s"> CSS / SCSS
+      <!-- Floating tech chips with Devicon logos -->
+      <div class="hero-chip" style="top:55px;left:0px;animation-duration:5s;animation-delay:0s">
+        <i class="devicon-react-original colored"></i> React
       </div>
-      <div class="hero-chip" style="bottom:95px;right:5px;animation-duration:7s;animation-delay:1.5s"> Next.js</div>
-      <div class="hero-chip" style="top:195px;left:-5px;animation-duration:6.5s;animation-delay:2s"> Node.js</div>
+      <div class="hero-chip" style="top:95px;right:5px;animation-duration:6s;animation-delay:1s">
+        <i class="devicon-php-plain colored"></i> PHP
+      </div>
+      <div class="hero-chip" style="bottom:145px;left:5px;animation-duration:5.5s;animation-delay:0.5s">
+        <i class="devicon-python-plain colored"></i> Python
+      </div>
+      <div class="hero-chip" style="bottom:95px;right:5px;animation-duration:7s;animation-delay:1.5s">
+        <i class="devicon-nextjs-plain"></i> Next.js
+      </div>
+      <div class="hero-chip" style="top:195px;left:-5px;animation-duration:6.5s;animation-delay:2s">
+        <i class="devicon-cplusplus-plain colored"></i> C++
+      </div>
       <!-- Mini status card -->
       <div class="hero-mini-card">
         <div class="mini-card-label"><span class="mini-card-dot"></span> Status</div>
-        <div class="mini-card-val">Open to Work 🌙</div>
+        <div class="mini-card-val">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#fbbf24" style="display:inline-block;vertical-align:-1px;margin-right:4px;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          Open to Work
+        </div>
       </div>
     </div>
   </section>
@@ -292,34 +313,77 @@
 
       <!-- Category Filters -->
       <div class="tech-filters" id="techFilters">
-        <button class="tech-filter-btn active" data-filter="all">Semua (23)</button>
+        <button class="tech-filter-btn active" data-filter="all">Semua (28)</button>
         <button class="tech-filter-btn" data-filter="web">Web &amp; Code</button>
+        <button class="tech-filter-btn" data-filter="data">Data &amp; AI</button>
         <button class="tech-filter-btn" data-filter="game">Game &amp; 3D</button>
         <button class="tech-filter-btn" data-filter="design">Design &amp; Media</button>
-        <button class="tech-filter-btn" data-filter="sys">System &amp; Data</button>
+        <button class="tech-filter-btn" data-filter="sys">System &amp; Cloud</button>
       </div>
     </div>
 
     <div class="skills-grid fade-in">
       <div class="skill-card">
-        <div class="skill-icon"></div>
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line>
+          </svg>
+        </div>
         <h4>Web &amp; Software Dev</h4>
-        <p>HTML, CSS, JavaScript, Node.js, Python, C++, Supabase, SQL, Postman</p>
+        <p>HTML, CSS, JavaScript, PHP, Node.js, C++, SQL, Supabase, Postman</p>
       </div>
+
       <div class="skill-card">
-        <div class="skill-icon"></div>
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            <path d="M12 12v6"></path>
+          </svg>
+        </div>
+        <h4>Data Science &amp; Database</h4>
+        <p>Python, NumPy, Pandas, R Studio, MariaDB, Google Colab, Tableau</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
         <h4>Game &amp; 3D Creative</h4>
         <p>Unity, GameMaker, Blender, 3D Modeling &amp; Game Mechanics</p>
       </div>
+
       <div class="skill-card">
-        <div class="skill-icon"></div>
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#f472b6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+            <path d="M2 2l7.586 7.586"></path>
+            <circle cx="11" cy="11" r="2"></circle>
+          </svg>
+        </div>
         <h4>Design &amp; Multimedia</h4>
         <p>Figma, Adobe Photoshop, Adobe Illustrator, Premiere Pro, LMMS</p>
       </div>
+
       <div class="skill-card">
-        <div class="skill-icon"></div>
-        <h4>System, Cloud &amp; Data</h4>
-        <p>Linux, Ubuntu, Cisco Networking, PuTTY, Google Colab, Tableau</p>
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+          </svg>
+        </div>
+        <h4>System, Cloud &amp; Networking</h4>
+        <p>Linux, Ubuntu, Cisco Networking, PuTTY</p>
       </div>
     </div>
   </section>
@@ -415,7 +479,7 @@
         </div>
         <div class="sticky" style="top:30px;left:230px;background:#e8eaf6;color:#333;transform:rotate(2deg)">
           <span class="sticky-name">RuumiDev <span class="sticky-time">1h ago</span></span>
-          <span class="sticky-text">"Stumbled from TikTok, really lovely portfolio 🔥"</span>
+          <span class="sticky-text">"Stumbled from TikTok, really lovely portfolio!"</span>
         </div>
         <div class="sticky" style="top:190px;left:40px;background:#e0f2f1;color:#333;transform:rotate(-1deg)">
           <span class="sticky-name">Hiii <span class="sticky-time">2h ago</span></span>
@@ -423,7 +487,7 @@
         </div>
         <div class="sticky" style="top:200px;left:240px;background:#fff9c4;color:#333;transform:rotate(3deg)">
           <span class="sticky-name">MoonFan <span class="sticky-time">3h ago</span></span>
-          <span class="sticky-text">"Website kamu keren banget! 🌙"</span>
+          <span class="sticky-text">"Website kamu keren banget!"</span>
         </div>
         <div class="sticky" style="top:360px;left:80px;background:#f3e5f5;color:#333;transform:rotate(-2deg)">
           <span class="sticky-name">Someone <span class="sticky-time">4h ago</span></span>
@@ -433,12 +497,18 @@
 
       <div class="wall-form-box fade-in">
         <h3>Leave a Trace</h3>
-        <p>Tinggalkan pesan, feedback, atau sekedar menyapa di sticky note ku! 🌙</p>
+        <p>Tinggalkan pesan, feedback, atau sekedar menyapa di sticky note ku!</p>
         <label class="form-label">YOUR NAME</label>
         <input type="text" class="form-input" id="wallName" placeholder="Nama atau handle...">
         <label class="form-label">YOUR MESSAGE</label>
         <textarea class="form-textarea" id="wallMsg" placeholder="Tulis pesanmu di sini..."></textarea>
-        <button class="btn-post" onclick="postSticky()">POST STICKY NOTE 🌙</button>
+        <button class="btn-post" onclick="postSticky()">
+          POST STICKY NOTE
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-2px;margin-left:5px;">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
       </div>
     </div>
   </section>
@@ -448,7 +518,7 @@
     <div class="contact-header fade-in">
       <p class="section-label">✦ Get In Touch</p>
       <h2 class="section-title">Let's Connect</h2>
-      <p class="section-desc">Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya! 🌙</p>
+      <p class="section-desc">Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya!</p>
     </div>
     <div class="contact-links fade-in">
       <a href="mailto:gabriel@email.com" class="contact-card">
@@ -486,7 +556,11 @@
       </a>
     </div>
     <p class="footer-note">
-      Made with 🌙 &amp; by Gabriel Ibanez Purnomo &bull; 2026
+      Made with 
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="#a78bfa" style="display:inline-block;vertical-align:-1px;">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      &amp; Passion by Gabriel Ibanez Purnomo &bull; 2026
     </p>
   </section>
 
